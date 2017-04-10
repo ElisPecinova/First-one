@@ -55,8 +55,7 @@ h2{
 	text-shadow: 0px 1px 0px #ccc, 0px 0px 5px rgba(50,50,50,0.3);
 }
 i{
-	color: #2d2d2d;
-	
+	color: #2d2d2d;	
 }
 header:after {
 	clear: both;
@@ -97,13 +96,25 @@ header:after {
 }
 .autor span{
 	font-weight: bold;
+    color: #c46800;
 }
 .zdroj {
 	display: inline-block;
 	float: right;
 	color: #2d2d2d;
+}       
+a:link { 
+    color: #c46800; 
+    text-decoration: none;  
 }
-
+a:visited { 
+    color: #995200; 
+    text-decoration: none;
+} 
+a:hover { 
+    text-decoration: underline;
+} 
+        
 #uvod,#pytel,#soutez,#zaver{
 	padding: 0em 1em;
 	font-family: Minion;
@@ -129,21 +140,53 @@ header:after {
 	width: 100%;
 	height: 15%;
 	z-index: -1;
-	opacity: 0.3;
+	opacity: 0.7;
 	background: linear-gradient(to bottom, rgba(255,255,255,0) 6%,rgba(255,255,255,1) 100%),
 				linear-gradient(to right, rgba(255,255,255,0) -30%,rgba(255,255,255,1) 100%),
 				url('https://previews.123rf.com/images/violin/violin0812/violin081200145/4061556-Dollars-background-abstract-business-money-background-Stock-Photo.jpg');
 	background-repeat: no-repeat;
     background-position: 50% 0;
-    -moz-background-size: cover;
+    /*-moz-background-size: cover;
     -webkit-background-size: cover;
-    background-size: cover;
+    background-size: cover;*/
 	}
 ol p{
 	text-align: justify;
 }
+#zaver{
+	position: relative;
+	overflow: hidden;
+}              
+#zaver:after{
+    content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0.9em;
+	width: 100%;
+	height: 52%;
+	z-index: -1;
+	opacity: 0.9;
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 6%,rgba(255,255,255,1) 100%),
+				linear-gradient(to right, rgba(255,255,255,0) -30%,rgba(255,255,255,1) 100%),
+				url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuMDjmArftKxFpnbYmpFBgBqNsO8EQ2fs0Wdt5wf7q3RPEGbSI1g');
+	background-repeat: repeat;
+    background-position: 0 55%;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: contain;
+}                  
 footer{
 	text-align: center;
+    text-transform: uppercase;
+	font-size: 1.3em;
+	letter-spacing: 1em;
+	font-family: Helvetica;
+	font-weight: bold;
+	margin-bottom: 5px;
+	color: transparent;
+	background-clip: text;
+	text-shadow: 0px 1px 0px #2d2d2d, 0px 0px 5px rgba(255,255,255,0.3);
 }
 #soutez{
 	position: relative;
@@ -158,7 +201,7 @@ footer{
 	width: 100%;
 	height: 8%;
 	z-index: -1;
-	opacity: 0.3;
+	opacity: 0.7;
 	background: linear-gradient(to bottom, rgba(255,255,255,0) 6%,rgba(255,255,255,1) 100%),
 				linear-gradient(to right, rgba(255,255,255,0) -30%,rgba(255,255,255,1) 100%),
 				url('https://cdn.elegantthemes.com/blog/wp-content/uploads/2013/09/winners_thumb1.jpg');
